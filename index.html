@@ -2,32 +2,42 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="GeoNeRF: Generalizing NeRF with Geometry Priors.">
-    <meta name="keywords" content="GeoNeRF">
+    <meta name="description" content="DepthInSpace: Exploitation and Fusion of Multiple Video Frames for Structured-Light Depth Estimation">
+    <meta name="keywords" content="DepthInSpace">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GeoNeRF: Generalizing NeRF with Geometry Priors</title>
+    <title>DepthInSpace: Exploitation and Fusion of Multiple Video Frames for Structured-Light Depth Estimation</title>
  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      
+
       function gtag() {
-      dataLayer.push(arguments);
+        dataLayer.push(arguments);
       }
 
       gtag('js', new Date());
 
       gtag('config', 'G-PYVRSFMDRL');
+
     </script>
 
     <link rel="stylesheet" href="./static/css/bulma.min.css">
     <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
     <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
     <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <link rel="stylesheet" href="./static/css/index.css">
-    <link rel="stylesheet" type="text/css" href="./static/css/magnifier.css">
-    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
   </head>
+
+
 
   <body>
 
@@ -36,11 +46,11 @@
         <div class="container">
           <div class="columns is-centered">
             <div class="column has-text-centered">
-              <h1 class="title is-2 publication-title">GeoNeRF: Generalizing NeRF with Geometry Priors</h1>
+              <h1 class="title is-2 publication-title">DepthInSpace: Exploitation and Fusion of Multiple Video Frames for Structured-Light Depth Estimation</h1>
               <div class="is-size-5 publication-authors">
                 
                 <span class="author-block">
-                  <a href="https://people.epfl.ch/mohammad.johari/?lang=en"> Mohammad Mahdi Johari</a> <sup>1,2</sup>, <a href="https://www.linkedin.com/in/yann-lepoittevin-3380a75b/"> Yann Lepoittevin </a><sup>3</sup>, <a href="https://fleuret.org/francois/"> François Fleuret </a><sup>4,2,1</sup> </span>
+                  <a href="https://people.epfl.ch/mohammad.johari/?lang=en"> Mohammad Mahdi Johari</a> <sup>1,2</sup>, <a href="https://ch.linkedin.com/in/camilla-carta"> Camilla Carta </a><sup>3</sup>, <a href="https://fleuret.org/francois/"> François Fleuret </a><sup>4,2,1</sup> </span>
 
                 <div class="is-size-5 publication-authors">
                   <span class="author-block"><sup>1</sup> Idiap Research Institute &nbsp;&nbsp;</span>
@@ -49,54 +59,54 @@
                   <span class="author-block"><sup>4</sup> University of Geneva &nbsp;&nbsp;</span>
                 </div>
                 
-                <h1 style="font-size:24px;font-weight:bold">arXiv 2021</h1>
+                <h1 style="font-size:24px;font-weight:bold">ICCV 2021</h1>
                 <div class="column has-text-centered">
                   <div class="publication-links">
                     
-                    <!-- <\!-- ArXiv -\->               -->
+                    <!-- <\!-- Paper -\->               -->
                     <span class="link-block">
-                      <a href="http://arxiv.org/abs/2111.13539"
+                      <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Johari_DepthInSpace_Exploitation_and_Fusion_of_Multiple_Video_Frames_for_Structured-Light_ICCV_2021_paper.pdf"
                          class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
-                          <i class="ai ai-arxiv"></i>
+                          <i class="fas fa-file-pdf"></i>
                         </span>
-                        <span>arXiv</span>
+                        <span>Paper</span>
                       </a>
                     </span>
 
-                    <!-- <\!-- PDF -\-> -->
-                    <!-- <span class="link-block"> -->
-                    <!--   <a href="include/paper.pdf" -->
-                    <!--      class="external-link button is-normal is-rounded is-dark"> -->
-                    <!--     <span class="icon"> -->
-                    <!--       <i class="fas fa-file-pdf"></i> -->
-                    <!--     </span> -->
-                    <!--     <span>Paper</span> -->
-                    <!--   </a> -->
-                    <!-- </span> -->
-                    
-                    <!-- <\!-- supplementary PDF -\-> -->
-                    <!-- <span class="link-block"> -->
-                    <!--   <a href="include/supp.pdf" -->
-                    <!--      class="external-link button is-normal is-rounded is-dark"> -->
-                    <!--     <span class="icon"> -->
-                    <!--       <i class="fas fa-file-pdf"></i> -->
-                    <!--     </span> -->
-                    <!--     <span>Supplementary</span> -->
-                    <!--   </a> -->
-                    <!-- </span> -->
+                    <!-- <\!-- Supplementary -\->               -->                    
+                    <span class="link-block">
+                      <a href="https://openaccess.thecvf.com/content/ICCV2021/supplemental/Johari_DepthInSpace_Exploitation_and_ICCV_2021_supplemental.pdf"
+                         class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Supplementary</span>
+                      </a>
+                    </span>
 
-                    <!-- Code -->
-                    <!-- <span class="link-block"> -->
-                    <!--   <a href="https://github.com" -->
-                    <!--      class="external-link button is-normal is-rounded is-dark"> -->
-                    <!--     <span class="icon"> -->
-                    <!--       <i class="fab fa-github"></i> -->
-                    <!--     </span> -->
-                    <!--     <span>Code</span> -->
-                    <!--   </a> -->
-                    <!-- </span> -->
-                    
+                    <!-- <\!-- Code -\->               -->                    
+                    <span class="link-block">
+                      <a href="https://github.com/idiap/DepthInSpace"
+                         class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fab fa-github"></i>
+                        </span>
+                        <span>Code</span>
+                      </a>
+                    </span>
+
+                    <!-- <\!-- Data -\->               -->                    
+                    <span class="link-block">
+                      <a href="https://www.idiap.ch/en/dataset/depthinspace/index_html"
+                         class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-database"></i>
+                        </span>
+                        <span>Data</span>
+                      </a>
+                    </span>
+                   
                   </div>
                 </div>
               </div>
@@ -105,51 +115,14 @@
         </div>
     </section>
     
-
-    <section>
-      <div class="container"> 
-        <div class="columns is-centered"> 
-          <div class="column is-full-width">
-            <h2 align="center"  class="title is-2"> Qualitative comparison with baselines </h2>
-
-            <h3 align="center"> Hover over image to move the zoomed in patch </h3>
-            <h3 align="center">Click on reference image to switch to a
-            different image</h3>
-              
-              <!-- Images -->
-              <div class="img-zoom-container" align="center">
-                <figure display="inline-block">
-                  <img id="reference"
-                       src="include/images/comp/gt/000.png" data-image="include/images/comp/gt/" >
-                  <figcaption>Reference</figcaption>
-                </figure>
-                
-                <figure display="inline-block">
-                  <div id="zoomed-geo" class="img-zoom-result"
-                       data-image="include/images/comp/geonerf/"></div>
-                  <figcaption>GeoNeRF (ours)</figcaption>
-                </figure>
-                
-                <figure display="inline-block">
-                  <div id="zoomed-ibr" class="img-zoom-result"
-                       data-image="include/images/comp/ibrnet/"></div>
-                  <figcaption>IBRNet</figcaption>
-                </figure>
-                
-                <figure display="inline-block">
-                  <div id="zoomed-mvs" class="img-zoom-result"
-                       data-image="include/images/comp/mvsnerf/"></div>
-                  <figcaption>MVSNeRF</figcaption>
-                </figure>
-              </div>
-              
-          </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe width="684" height="385" src="https://www.youtube.com/embed/f4LEvIjxKSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
+    </div>
 
         <!-- Abstract. -->
         <div class="columns is-centered has-text-centered">
@@ -157,7 +130,7 @@
             <h2 class="title is-2">Abstract</h2>
             <div class="content has-text-justified">
               <p>
-                We present GeoNeRF, a generalizable photorealistic novel view synthesis method based on neural radiance fields. Our approach consists of two main stages: a geometry reasoner and a renderer. To render a novel view, the geometry reasoner first constructs cascaded cost volumes for each nearby source view. Then, using a Transformer-based attention mechanism and the cascaded cost volumes, the renderer infers geometry and appearance, and renders detailed images via classical volume rendering techniques. This architecture, in particular, allows sophisticated occlusion reasoning, gathering information from consistent source views. Moreover, our method can easily be fine-tuned on a single scene, and renders competitive results with per-scene optimized neural rendering methods with a fraction of computational cost. Experiments show that GeoNeRF outperforms state-of-the-art generalizable neural rendering models on various synthetic and real datasets. Lastly, with a slight modification to the geometry reasoner, we also propose an alternative model that adapts to RGBD images. This model directly exploits the depth information often available thanks to depth sensors. The implementation code will be publicly available.
+                We present DepthInSpace, a self-supervised deep-learning method for depth estimation using a structured-light camera. The design of this method is motivated by the commercial use case of embedded depth sensors in nowadays smartphones. We first propose to use estimated optical flow from ambient information of multiple video frames as a complementary guide for training a single-frame depth estimation network, helping to preserve edges and reduce over-smoothing issues. Utilizing optical flow, we also propose to fuse the data of multiple video frames to get a more accurate depth map. In particular, fused depth maps are more robust in occluded areas and incur less in flying pixels artifacts. We finally demonstrate that these more precise fused depth maps can be used as self-supervision for fine-tuning a single-frame depth estimation network to improve its performance. Our models' effectiveness is evaluated and compared with state-of-the-art models on both synthetic and our newly introduced real datasets.
               </p>
 
             </div>
@@ -165,125 +138,21 @@
         </div>
       </div>
     </section>
-    
-    <section class="section"> 
-      <div class="container"> 
-        <!--/ Abstract. -->
-        <h2 align="center"  class="title is-2">Overview of GeoNeRF</h2> 
-        <div align="center" style="margin-top:80px;" style="margin-bottom:120px;">
-          <img style='height: auto; width: 100%; object-fit: contain'
-               src="include/images/GeoNeRF.jpg" alt="overview_image">
-        </div> 
-    </section>
-
-
-      <section class="section"> 
-        <div class="container"> 
-          <div class="columns is-centered"> 
-            <div class="column is-full-width"> 
-              <h2 align="center"  class="title is-2">Video Comparison between GeoNeRF and state of the art methods</h2> 
-
-              <div class="content has-text-centered"> 
-                <video poster='include/videos/video_poster.jpg' 
-                       id="replay-video" 
-                       controls 
-                       muted 
-                       width="100%"> 
-                  <source src="include/videos/video.mp4" 
-                          type="video/mp4"> 
-                </video> 
-              </div>
-                     
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <section class="section"> 
-        <div class="container"> 
-          <div class="columns is-centered"> 
-            <div class="column is-full-width"> 
-              <h2 align="center"  class="title is-2">Various sequences rendered with GeoNeRF</h2> 
-
-              <div class="content has-text-centered"> 
-                <video poster='include/videos/video2_poster.jpg' 
-                       id="replay-video" 
-                       controls 
-                       muted 
-                       width="100%"> 
-                  <source src="include/videos/video2.mp4" 
-                          type="video/mp4"> 
-                </video> 
-              </div>
-              
-            </div>
-          </div>
-        </div>
-      </section>
       
       <section class="section" id="BibTeX citation">
         <div class="container content">
           <h2 class="title">BibTeX</h2>
           <pre><code>
-              @article{johari2021geonerf,
-                title={GeoNeRF: Generalizing NeRF with Geometry Priors},
-                author={Johari, M. M. and Lepoittevin, Y. and Fleuret, F.},
-                journal={arXiv preprint arXiv:2111.13539},
-                year={2021}
-              }
+            @inproceedings{johari-et-al-2021,
+              author = {Johari, M. and Carta, C. and Fleuret, F.},
+              title = {DepthInSpace: Exploitation and Fusion of Multiple Video Frames for Structured-Light Depth Estimation},
+              booktitle = {Proceedings of the IEEE International Conference on Computer Vision (ICCV)},
+              year = {2021}
+            }
           </code></pre>
         </div>
       </section>
       
   </body>
+
 </html>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script defer src="./static/js/fontawesome.all.min.js"></script>
-<script src="./static/js/bulma-carousel.min.js"></script>
-<script src="./static/js/bulma-slider.min.js"></script>
-<script src="./static/js/index.js"></script>  
-
-<script src="./static/js/magnifier.js"></script>
-<script> imageZoom("reference", ["zoomed-geo", "zoomed-ibr", "zoomed-mvs" ], 8); </script>
-
-<!-- Carousel -->
-<!-- <section class="hero is-light is-small"> -->
-<!--   <div class="hero-body"> -->
-<!--     <div class="container"> -->
-<!--       <div id="results-carousel" class="carousel results-carousel"> -->
-        
-<!--         <\!-- Video -\-> -->
-<!--         <div class="item lego"> -->
-<!--           <video poster="" id="trex" controls muted loop height="10%"> -->
-<!--             <source src="include/videos/trex.mp4" -->
-<!--                     type="video/mp4"> -->
-<!--           </video> -->
-<!--         </div> -->
-        
-<!--         <div class="item sc21"> -->
-<!--           <video poster="" id="sc21" controls muted loop height="10%"> -->
-<!--             <source src="include/videos/sc21.mp4" -->
-<!--                     type="video/mp4"> -->
-<!--           </video> -->
-<!--         </div> -->
-        
-<!--         <div class="item lego"> -->
-<!--           <video poster="" id="lego" controls muted loop height="10%"> -->
-<!--             <source src="include/videos/lego.mp4" -->
-<!--                     type="video/mp4"> -->
-<!--           </video> -->
-<!--         </div> -->
-        
-<!--         <div class="item sc21"> -->
-<!--           <video poster="" id="sc21" controls muted loop height="10%"> -->
-<!--             <source src="include/videos/sc21.mp4" -->
-<!--                     type="video/mp4"> -->
-<!--           </video> -->
-<!--         </div> -->
-
-        
-<!--       </div> -->
-<!--     </div> -->
-<!--   </div> -->
-<!-- </section> -->
